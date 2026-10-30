@@ -1,0 +1,10 @@
+$ mpirun -np 4 ./pi_mc
+Received from process 0 : count = 1962901
+Received from process 1 : count = 1963679
+Received from process 2 : count = 1963856
+Received from process 3 : count = 1963329
+Processes      : 4
+Iterations     : 10000000
+Pi estimate    : 3.1415060000
+Error          : 0.0000866536
+Time (seconds) : 0.142810

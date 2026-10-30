@@ -1,0 +1,10 @@
+$ mpirun -np 2 ./job1
+Hello World! From rank 0 machine vm
+Just a normal process From rank 1 machine vm
+
+$ mpirun -np 4 ./job1
+Just a normal process From rank 1 machine vm
+Just a normal process From rank 2 machine vm
+Hello World! From rank 0 machine vm
+Just a normal process From rank 3 machine vm
+

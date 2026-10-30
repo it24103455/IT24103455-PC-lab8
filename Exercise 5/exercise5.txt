@@ -1,0 +1,24 @@
+--- 5.1: source/destination mismatch ---
+$ mpirun -np 3 ./message1_mismatch
+Process 2 waiting for a message from process 1
+Process 1 waiting for a message from process 0
+Process 0 sent 42 to process 2
+[program did not finish - killed by 'timeout 15' after 15 seconds]
+
+--- 5.2: original message2 ---
+$ mpirun -np 2 ./message2
+Process 0 sent 0
+Process 0 sent 10
+Process 0 sent 20
+Process 1 received 0
+Process 1 received 10
+Process 1 received 20
+
+--- 5.2: message2 with MPI_Bsend ---
+$ mpirun -np 2 ./message2_bsend
+Process 0 sent 0
+Process 0 sent 10
+Process 0 sent 20
+Process 1 received 0
+Process 1 received 10
+Process 1 received 20

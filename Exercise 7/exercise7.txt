@@ -1,0 +1,26 @@
+$ mpirun -np 4 ./pi_mc_bsend
+Received from process 0 : count = 1962901
+Received from process 1 : count = 1963679
+Received from process 2 : count = 1963856
+Received from process 3 : count = 1963329
+Processes      : 4
+Iterations     : 10000000
+Pi estimate    : 3.1415060000
+Error          : 0.0000866536
+Time (seconds) : 0.140031
+
+$ mpirun -np 8 ./pi_mc_bsend
+Received from process 0 : count = 981224
+Received from process 2 : count = 981988
+Received from process 1 : count = 982052
+Received from process 3 : count = 981331
+Received from process 4 : count = 981689
+Received from process 5 : count = 981075
+Received from process 6 : count = 981318
+Received from process 7 : count = 981782
+Processes      : 8
+Iterations     : 10000000
+Pi estimate    : 3.1409836000
+Error          : 0.0006090536
+Time (seconds) : 0.126638
+

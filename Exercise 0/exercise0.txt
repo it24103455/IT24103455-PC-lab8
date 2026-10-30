@@ -1,0 +1,12 @@
+$ mpirun -np 4 ./messages1
+SEnding message to computer 3 from computer 1
+in computer 3 the value of y is 30
+Just a normal process From rank 0 machine vm
+Just a normal process From rank 2 machine vm
+
+$ mpirun -np 4 ./messaage2
+Just a normal process From rank 0 machine vm
+Just a normal process From rank 2 machine vm
+SEnding message to computer 3 from computer 1
+in computer 3 the value of y is printed
+ 0  10  20  30  40  50  60  70  80  90 

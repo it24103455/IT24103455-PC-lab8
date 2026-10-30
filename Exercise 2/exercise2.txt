@@ -1,0 +1,9 @@
+$ mpirun -np 4 ./sum
+Process 3 summed 7500001 .. 10000000 = 21875001250000
+Process 2 summed 5000001 .. 7500000 = 15625001250000
+Process 1 summed 2500001 .. 5000000 = 9375001250000
+Process 0 summed 1 .. 2500000 = 3125001250000
+Processes      : 4
+Total sum      : 50000005000000
+Expected       : 50000005000000
+Time (seconds) : 0.003954
